@@ -31,6 +31,9 @@ header {
 
 .container { margin-top: 5rem; margin-bottom: 5rem;}
 
+.text-width{
+  width: 67%
+}
 
 //Typography and button styles - included are some placeholders for styling
 //Keep in mind, a component may use one placeholder for a title / etc now but it
@@ -87,6 +90,9 @@ a {
    justify-content: space-between;
 }
 
+.text{
+  font-family: $mm-sample-font-sans-serif;
+}
 .mm-card {
   //feel free to make any comments to explain your thinking
   
@@ -99,6 +105,7 @@ a {
   // flex-basis: auto;
   flex: 0 1 32%;
   // display: grid;
+  background-color: white;
   
 
   .image {
@@ -115,5 +122,9 @@ a {
     padding: 25px;
     background-color: white;
     margin-top: -30px;
+    .title{
+      font-family: $mm-sample-font-serif;
+      font-size: 3rem;
+    }
   }
 }
