@@ -29,7 +29,7 @@ header {
   }
 }
 
-.container { margin-top: 5rem; }
+.container { margin-top: 5rem; margin-bottom: 5rem;}
 
 
 //Typography and button styles - included are some placeholders for styling
@@ -76,17 +76,44 @@ a {
   border-radius: 0;
 }
 
+.mm-card-parent{
+  // display: grid;
+  // padding: 1rem;
+  // grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  // grid-gap: 1rem;
+
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
 .mm-card {
   //feel free to make any comments to explain your thinking
+  
+  //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  // transition: 0.3s;
+  // display: inline-block;
+  // float: left;
+  // width: 33%;
+  // padding: 10px;
+  // flex-basis: auto;
+  flex: 0 1 32%;
+  // display: grid;
+  
 
   .image {
     //including some base styles so this shows up in the basic page, feel free to change these
-    height: inherit;
-    min-height: 15rem;
+    height: 200px;
+    //min-height: 15rem;
     width: 100%;
+    background-image: url('http://via.placeholder.com/778x368');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .content {
-
+    padding: 25px;
+    background-color: white;
+    margin-top: -30px;
   }
 }
