@@ -1,5 +1,5 @@
 // variables
-$mm-sample-font-sans-serif: Helvetica, Arial, sans-serif;
+$mm-sample-font-sans-serif: Neometric, Arial, sans-serif;
 $mm-sample-font-serif:      Georgia, "Times New Roman", Times, serif;
 
 
@@ -93,6 +93,15 @@ a {
 .text{
   font-family: $mm-sample-font-sans-serif;
 }
+
+.footer{
+    position: fixed;
+    height: 50px;    
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
 .mm-card {
   //feel free to make any comments to explain your thinking
   
@@ -110,7 +119,7 @@ a {
 
   .image {
     //including some base styles so this shows up in the basic page, feel free to change these
-    height: 200px;
+    height: 300px;
     //min-height: 15rem;
     width: 100%;
     background-image: url('http://via.placeholder.com/778x368');
@@ -121,10 +130,25 @@ a {
   .content {
     padding: 25px;
     background-color: white;
-    margin-top: -30px;
+    margin-top: -100px;
     .title{
       font-family: $mm-sample-font-serif;
       font-size: 3rem;
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+        .text-width{
+          width: 100%
+        }
+
+        .mm-card-parent{        
+           display: block;          
+        }
+
+        .mm-card{
+          margin-bottom: 20px;
+          width: 450px
+        }
+    }

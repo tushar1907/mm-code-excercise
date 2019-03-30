@@ -50,13 +50,21 @@ a {
   justify-content: space-between; }
 
 .text {
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Neometric, Arial, sans-serif; }
+
+.footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px; }
 
 .mm-card {
   flex: 0 1 32%;
   background-color: white; }
   .mm-card .image {
-    height: 200px;
+    height: 300px;
     width: 100%;
     background-image: url("http://via.placeholder.com/778x368");
     background-repeat: no-repeat;
@@ -64,9 +72,20 @@ a {
   .mm-card .content {
     padding: 25px;
     background-color: white;
-    margin-top: -30px; }
+    margin-top: -100px; }
     .mm-card .content .title {
       font-family: Georgia, "Times New Roman", Times, serif;
       font-size: 3rem; }
+
+@media screen and (max-width: 600px) {
+  .text-width {
+    width: 100%; }
+
+  .mm-card-parent {
+    display: block; }
+
+  .mm-card {
+    margin-bottom: 20px;
+    width: 450px; } }
 
 /*# sourceMappingURL=mm-code-exercise.css.map */
