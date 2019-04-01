@@ -44,6 +44,17 @@ a {
   a:hover {
     color: #002f6c; }
 
+.btn-primary {
+  color: #000;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1.2rem 4rem;
+  background-color: yellow;
+  border: 0;
+  border-radius: 0; }
+
 .mm-card-parent {
   display: flex;
   flex-wrap: wrap;

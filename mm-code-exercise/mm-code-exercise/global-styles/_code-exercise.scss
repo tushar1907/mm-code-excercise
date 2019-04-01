@@ -4,7 +4,7 @@ $mm-sample-font-serif:      Georgia, "Times New Roman", Times, serif;
 
 
 html {
-  font-size: 62.5%; //why do we set the font size to this value at the html level?
+  font-size: 62.5%; //so that it remains consistent all throughout the page.
   position: relative;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -67,7 +67,7 @@ a {
   font-size: 1.2rem;
 }
 
-%btn-primary {
+.btn-primary {
   color: #000;
   font-size: 1rem;
   letter-spacing: .1rem;
@@ -79,12 +79,8 @@ a {
   border-radius: 0;
 }
 
+//card parent added for styling
 .mm-card-parent{
-  // display: grid;
-  // padding: 1rem;
-  // grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-  // grid-gap: 1rem;
-
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -105,15 +101,8 @@ a {
 .mm-card {
   //feel free to make any comments to explain your thinking
   
-  //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  // transition: 0.3s;
-  // display: inline-block;
-  // float: left;
-  // width: 33%;
-  // padding: 10px;
-  // flex-basis: auto;
-  flex: 0 1 32%;
-  // display: grid;
+  //flex is used here to give styles to card
+  flex: 0 1 32%;  
   background-color: white;
   
 
